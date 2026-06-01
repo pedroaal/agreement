@@ -165,8 +165,7 @@ class Agreement(models.Model):
         "res.users",
         string="Signed By",
         tracking=True,
-        help="The user at our company who authorized/signed the agreement or "
-        "contract.",
+        help="The user at our company who authorized/signed the agreement or contract.",
     )
     partner_signed_user_id = fields.Many2one(
         "res.partner",
